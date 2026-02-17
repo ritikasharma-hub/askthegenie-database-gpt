@@ -11,6 +11,9 @@ if src_path not in sys.path:
 from dotenv import load_dotenv
 load_dotenv()
 
+from flask import Flask
+app = Flask(__name__)
+
 from typing import List, Optional, Tuple
 
 from vanna import Agent
