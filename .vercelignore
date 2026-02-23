@@ -68,5 +68,4 @@ src/vanna/integrations/premium/
 src/vanna/integrations/presto/
 src/vanna/integrations/qdrant/
 src/vanna/integrations/snowflake/
-src/vanna/integrations/sqlite/
 src/vanna/integrations/weaviate/
