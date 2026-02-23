@@ -529,7 +529,10 @@ def create_app():
     server = VannaFlaskServer(agent)
     return server.create_app()
 
+# Initialize the app at the module level for Vercel Serverless
+app = create_app()
+
 if __name__ == "__main__":
-    app = create_app()
     print("Starting Vanna Flask Dashboard at http://localhost:8084")
     app.run(host="0.0.0.0", port=8084, debug=True)
+
