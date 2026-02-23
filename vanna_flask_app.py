@@ -456,6 +456,7 @@ def create_app():
         model="gpt-4o-mini",
         api_key=os.getenv("OPENAI_API_KEY")
     )
+    
 
     postgres = PostgresRunner(
         host=os.getenv("DB_HOST"),

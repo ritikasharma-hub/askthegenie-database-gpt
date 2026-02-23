@@ -34,12 +34,14 @@ llm = OpenAILlmService(
 
 # Postgres Connection
 postgres = PostgresRunner(
-    host=DB_HOST,
-    port=DB_PORT,
-    database=DB_NAME,
-    user=DB_USER,
-    password=DB_PASSWORD
-)
+        host=os.getenv("DB_HOST"),
+        port=int(os.getenv("DB_PORT", 5432)),
+        database=os.getenv("DB_NAME"),
+        user=os.getenv("DB_USER"),
+        password=os.getenv("DB_PASSWORD"),
+        sslmode="require"
+    )
+
 
 
 print("Connected to PostgreSQL successfully!")

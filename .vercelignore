@@ -1,0 +1,72 @@
+# Project Metadata and Configs
+.git/
+.github/
+.idea/
+.vscode/
+.env
+README_LEGACY.md
+CONTRIBUTING.md
+MIGRATION_GUIDE.md
+pyproject.toml
+setup.cfg
+tox.ini
+.pre-commit-config.yaml
+.gitattributes
+
+# Test files and Documentation
+tests/
+examples/
+notebooks/
+papers/
+img/
+
+# Python Cache & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+env/
+venv/
+.env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Operational Waste & Output
+archive_legacy_vanna/
+*.csv
+*query_results*/
+.ipynb_checkpoints
+
+# Unused Massive Vanna Modules (Drastically Reduces Vercel Build Size)
+# We exclude the entire legacy adapter system
+src/vanna/legacy/
+
+# We exclude all examples
+src/vanna/examples/
+
+# We exclude all heavy integrations except postgres and openai
+src/vanna/integrations/anthropic/
+src/vanna/integrations/azureopenai/
+src/vanna/integrations/azuresearch/
+src/vanna/integrations/bigquery/
+src/vanna/integrations/chromadb/
+src/vanna/integrations/clickhouse/
+src/vanna/integrations/duckdb/
+src/vanna/integrations/faiss/
+src/vanna/integrations/google/
+src/vanna/integrations/hive/
+src/vanna/integrations/marqo/
+src/vanna/integrations/milvus/
+src/vanna/integrations/mssql/
+src/vanna/integrations/mysql/
+src/vanna/integrations/ollama/
+src/vanna/integrations/opensearch/
+src/vanna/integrations/oracle/
+src/vanna/integrations/pinecone/
+src/vanna/integrations/premium/
+src/vanna/integrations/presto/
+src/vanna/integrations/qdrant/
+src/vanna/integrations/snowflake/
+src/vanna/integrations/sqlite/
+src/vanna/integrations/weaviate/
